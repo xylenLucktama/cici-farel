@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan untuk Erin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: repeating-linear-gradient(45deg, #fce4ec, #fce4ec 10px, #ff80ab 10px, #ff80ab 20px), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="20">❤️</text></svg>');
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 400px;
+            margin-top: 50px;
+        }
+        button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+        .hidden {
+            display: none;
+        }
+        .text {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="openButton" onclick="showMessage()">Klik untuk Membuka</button>
+        <div id="message" class="hidden">
+            <p class="text">
+                Erin, aku mau ngomong serius, dan ini terakhir kalinya aku nanya soal ini.<br><br>
+                Aku udah cukup lama ada di samping kamu, peduli, dan ngabisin banyak waktu buat kamu. Aku nggak pernah masalahin itu, karena aku tulus. Tapi yang terus bikin aku kepikiran adalah aku nggak pernah tahu posisi aku di hidup kamu. Aku udah beberapa kali nanya, tapi jawabannya selalu menggantung, dan aku nggak bisa terus-terusan kayak gini.<br><br>
+                Aku nanya kepastian bukan karena aku maksa, tapi karena aku takut kehilangan kamu. Aku nggak mau suatu hari tiba-tiba kamu pergi gitu aja, sementara selama ini aku selalu ada buat kamu. Aku nggak bisa bohong, hampir setiap malam aku mimpiin kamu, dan itu makin bikin aku kepikiran. Aku nggak mau terus-terusan kayak gini tanpa tahu sebenarnya aku ini siapa buat kamu.<br><br>
+                Aku nggak minta jawaban yang terburu-buru atau sesuatu yang kamu nggak siap buat lakuin. Aku cuma pengen tahu satu hal: aku ini siapa buat kamu? Kalau kamu melihat aku lebih dari teman, aku akan tetap ada di sini, kita bisa jalanin bareng, tanpa harus terburu-buru. Tapi kalau aku selama ini cuma sekadar "ada" tanpa arti yang pasti buat kamu, aku lebih baik tahu sekarang daripada terus berharap sesuatu yang nggak ada.<br><br>
+                Kalau kamu nggak bisa atau nggak mau jawab, aku bakal ngerti. Aku bakal mulai fokus ke diriku sendiri, bukan karena aku marah atau kecewa, tapi karena aku nggak bisa terus-terusan ada dalam ketidakpastian ini.<br><br>
+                100% dibuat oleh suami rusiamu (bercandaaa, Farel maksudnyaa🤍)
+            </p>
+            <audio id="music" loop>
+                <source src="https://files.catbox.moe/42qh3o.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div><script>
+    function showMessage() {
+        alert("Pastikan volume HP-mu minimal seperempat ya! 🎵");
+        document.getElementById("message").classList.remove("hidden");
+        document.getElementById("openButton").style.display = "none";
+        let audio = document.getElementById("music");
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
